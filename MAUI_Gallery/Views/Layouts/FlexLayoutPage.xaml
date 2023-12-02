@@ -3,10 +3,69 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MAUI_Gallery.Views.Layouts.FlexLayoutPage"
              Title="FlexLayoutPage">
-    <FlexLayout Direction="Column" AlignItems="Center">
-        <Label Text="Linha 1" Padding="10" BackgroundColor="RosyBrown"></Label>
-        <Label Text="Linha 2" FlexLayout.AlignSelf="Center" Padding="10" BackgroundColor="SandyBrown"></Label>
-        <Label Text="Linha 3" FlexLayout.AlignSelf="End"  Padding="10" BackgroundColor="SaddleBrown"></Label>
-        <Label Text="Linha 3" FlexLayout.AlignSelf="Stretch"  Padding="10" BackgroundColor="Black"></Label>
+    <FlexLayout 
+        Direction="Column"
+        AlignItems="Start"
+        AlignContent="Stretch"
+        JustifyContent="SpaceBetween"
+        Wrap="Wrap">
+        <Label 
+            Text="Linha 1" 
+            Padding="10" 
+            FlexLayout.Order="1" 
+            FlexLayout.Grow="1"
+            BackgroundColor="RosyBrown" />
+        
+        <Label 
+            Text="Linha 2" 
+            FlexLayout.AlignSelf="Center"
+            FlexLayout.Order="0" 
+            FlexLayout.Basis="20%"
+            Padding="10" 
+            BackgroundColor="SandyBrown"/>
+
+        <Label 
+            Text="Linha 3" 
+            FlexLayout.AlignSelf="End" 
+            FlexLayout.Order="3" 
+            Padding="10" 
+            BackgroundColor="SaddleBrown"/>
+
+        <Label 
+            Text="Linha 4" 
+            FlexLayout.AlignSelf="Stretch"
+            FlexLayout.Order="2"  Padding="10" 
+            BackgroundColor="Black"/>
+
+        <Label 
+            Text="Linha 5" 
+            BackgroundColor="Aqua"
+            FlexLayout.AlignSelf="Stretch"
+            FlexLayout.Order="2"  Padding="10" />
+
+        <Label 
+            Text="Linha 6" 
+            FlexLayout.AlignSelf="Stretch"
+            FlexLayout.Order="2"  Padding="10" 
+            BackgroundColor="Aquamarine"/>
+
+        <Label 
+            Text="Linha 7" 
+            FlexLayout.AlignSelf="Stretch"
+            FlexLayout.Order="2"  Padding="10" 
+            BackgroundColor="Aquamarine"/>
+
+        <Label 
+            Text="Linha 8" 
+            FlexLayout.AlignSelf="Stretch"
+            FlexLayout.Order="2"  Padding="10" 
+            BackgroundColor="Aquamarine"/>
+
+        <Label
+            Text="Linha 9"
+            FlexLayout.Shrink="0"
+            FlexLayout.AlignSelf="Stretch"
+            FlexLayout.Order="2"  Padding="10" 
+            BackgroundColor="Aquamarine"/>
     </FlexLayout>
 </ContentPage>
